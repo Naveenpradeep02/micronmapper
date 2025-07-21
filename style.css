@@ -246,7 +246,7 @@ header .container {
   margin: 0px auto;
   text-align: center;
 }
-.sec2-boxis {
+.sec2-boxis .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
@@ -414,5 +414,78 @@ h2 span {
   .logo1 img,
   .logo2 img {
     width: 120px;
+  }
+  .hero-top h1 {
+    font-size: 24px;
+  }
+  .left {
+    width: 100%;
+  }
+  .hero-top img {
+    width: 150px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .hero h2,
+  .video-container h2,
+  .section h2,
+  .section2 h2 {
+    font-size: 28px;
+  }
+  .video-container {
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    border: 5px solid var(--light-color);
+    border-radius: 30px;
+    gap: 10px;
+  }
+  .video-container img {
+    height: 100%;
+  }
+  .video-container-text {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  hr {
+    display: none;
+  }
+  .l-box {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .section-text {
+    width: 100%;
+  }
+  .section1 .container,
+  .sec2-boxis .container,
+  .section3 .container,
+  .section5 .container,
+  .section7 .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section2::before {
+    width: 100%;
+  }
+  .section7-text h4 {
+    font-size: 36px;
+  }
+  .section7-img img {
+    width: 100%;
+  }
+  .section {
+    padding: 0px;
+    padding-bottom: 20px;
+  }
+  .hero p {
+    width: 100%;
   }
 }
