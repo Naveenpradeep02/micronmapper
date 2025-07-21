@@ -46,12 +46,20 @@ header .container {
   background-color: var(--black-color);
   width: 100%;
   height: 80vh;
-  background: url(./img/bg.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: start;
   justify-content: start;
+}
+/* .dec-video {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+} */
+.dec-video {
+  width: 100%;
+  overflow: hidden;
 }
 .hero-top h1 {
   font-size: 56px;
@@ -64,7 +72,21 @@ header .container {
   padding-bottom: 40px;
 }
 .left {
-  width: 50%;
+  width: 100%;
+}
+.video-section {
+  width: 100%;
+  height: auto;
+  display: none;
+  padding-top: 20px;
+}
+.vid-sec {
+  width: 100%;
+  height: 100%;
+}
+.vid-sec2 {
+  width: 100%;
+  object-fit: cover;
 }
 /*  */
 .hero {
@@ -74,6 +96,12 @@ header .container {
   background-color: var(--black-color);
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  width: 100%;
+  height: 100vh;
 }
 .hero .container {
   display: flex;
@@ -415,6 +443,14 @@ h2 span {
   .logo2 img {
     width: 120px;
   }
+  .hero-top {
+    background: var(--black-color);
+
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 30px;
+    text-align: center;
+    gap: 40px;
+  }
   .hero-top h1 {
     font-size: 24px;
   }
@@ -424,6 +460,7 @@ h2 span {
   .hero-top img {
     width: 150px;
   }
+
   p {
     font-size: 14px;
   }
@@ -461,6 +498,7 @@ h2 span {
     font-size: 12px;
     text-align: center;
     font-weight: 500;
+    height: 100%;
   }
   .section-text {
     width: 100%;
@@ -487,5 +525,8 @@ h2 span {
   }
   .hero p {
     width: 100%;
+  }
+  .video-section {
+    display: block;
   }
 }
