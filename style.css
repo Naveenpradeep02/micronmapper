@@ -438,6 +438,27 @@ h2 span {
   font-size: 24px;
   color: var(--light-color);
 }
+.section8 .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section8 .section-text p {
+  width: 80%;
+}
+.section9 .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.section9 img {
+  width: 100%;
+}
+.section9 h4 {
+  color: var(--light-color);
+  padding: 10px 0px;
+  text-align: center;
+  font-weight: 600;
+}
 @media screen and (max-width: 575px) {
   .logo1 img,
   .logo2 img {
@@ -507,7 +528,9 @@ h2 span {
   .sec2-boxis .container,
   .section3 .container,
   .section5 .container,
-  .section7 .container {
+  .section7 .container,
+  .section8 .container,
+  .section9 .container {
     grid-template-columns: repeat(1, 1fr);
   }
   .section2::before {
@@ -528,5 +551,8 @@ h2 span {
   }
   .video-section {
     display: block;
+  }
+  .section8 .section-text p {
+    width: 100%;
   }
 }
