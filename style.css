@@ -59,6 +59,8 @@ header .container {
 } */
 .dec-video {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   overflow: hidden;
 }
 .hero-top h1 {
@@ -632,6 +634,9 @@ h2 {
 .box7 {
   grid-area: box7;
 }
+.box7 .box-dec {
+  background-color: #565656;
+}
 .box8 {
   grid-area: box8;
 }
@@ -678,6 +683,9 @@ h2 {
 .cen-img {
   width: 60%;
   margin: auto;
+}
+.vid-con {
+  margin: 30px auto;
 }
 @media screen and (max-width: 575px) {
   .box-dec {
