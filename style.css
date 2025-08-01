@@ -691,6 +691,9 @@ h2 {
 .box-dec img {
   width: 90px;
 }
+.box-dec2 img {
+  width: 125px;
+}
 .c-div {
   display: flex;
   align-items: center;
