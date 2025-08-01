@@ -703,6 +703,31 @@ h2 {
 .vid-con {
   margin: 30px auto;
 }
+.content {
+  padding: 40px;
+  max-width: 800px;
+}
+.center-title {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #1e1e1e 0%, #000 100%);
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content h2 {
+  font-style: italic;
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+.content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
 @media screen and (max-width: 575px) {
   .box-dec {
     flex-direction: column;
@@ -842,5 +867,11 @@ h2 {
   }
   footer .container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .ft-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ft-img img {
+    width: 75%;
   }
 }
