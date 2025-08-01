@@ -590,7 +590,7 @@ h2 {
 }
 
 .note {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: bold;
   color: #fff;
   margin-bottom: 10px;
@@ -873,5 +873,8 @@ h2 {
   }
   .ft-img img {
     width: 75%;
+  }
+  .note {
+    font-size: 14px;
   }
 }
