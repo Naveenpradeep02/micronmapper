@@ -450,7 +450,7 @@ h2 span {
 }
 .section9 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 .section9 img {
@@ -461,6 +461,10 @@ h2 span {
   padding: 10px 0px;
   text-align: center;
   font-weight: 600;
+}
+.ft-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .ft-img img {
   width: 100%;
